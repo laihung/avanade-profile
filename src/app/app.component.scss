@@ -1,0 +1,36 @@
+@import '../assets/scss/variables';
+
+.avanade-card-wrapper {
+    text-align: center;
+}
+
+.avanade-page-title {
+    text-align: center;
+}
+
+.avanade-pagination {
+    height: $pagination-height;
+    text-align: center;
+    margin: 50px 0;
+}
+
+.pagination-item {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin: 0 3px;
+    
+    &.input {
+        width: 40px;
+    }
+}
+
+.loader-wrapper {
+    background-color: #fff;
+    width: 100%;
+    height: 450px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}

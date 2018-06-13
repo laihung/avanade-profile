@@ -1,0 +1,26 @@
+<h3 class="avanade-page-title">Page {{pageNumber}}</h3>
+
+<div class="avanade-card-wrapper">
+  <avanade-card *ngFor="let card of cards;" [dataList]="card"></avanade-card>
+</div>
+
+<div class="avanade-pagination-wrapper">
+  <div class="avanade-pagination">
+    <ng-container *ngIf="pageNumber != 1">
+        <avanade-button class="pagination-item" [text]="'<'" (click)="getPeopleViaButton(pageNumber)"></avanade-button>
+    </ng-container>
+
+    <avanade-button class="pagination-item" [text]="'Get People'" (click)="getPeopleViaInput();"></avanade-button>
+    <avanade-input class="pagination-item input" [id]="'page-number-input'"></avanade-input>
+
+    <ng-container *ngIf="pageNumber != totalPage">
+      <avanade-button class="pagination-item" [text]="'>'" (click)="getPeopleViaButton(pageNumber, false)"></avanade-button>
+    </ng-container>
+  </div>
+</div>
+
+<ng-container *ngIf="isLoading">
+  <div class="loader-wrapper">
+    <avanade-loader></avanade-loader>
+  </div>
+</ng-container>

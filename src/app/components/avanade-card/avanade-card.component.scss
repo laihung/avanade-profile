@@ -1,0 +1,17 @@
+@import '../../../assets/scss/variables';
+
+.avanade-card {
+    text-align: center;
+    display: inline-block;
+    padding: 0 20px;
+    box-sizing: border-box;
+    background-color: $card-bg-color;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+.profile-id,
+.profile-names {
+    padding: 10px 0;
+    box-sizing: border-box;
+}

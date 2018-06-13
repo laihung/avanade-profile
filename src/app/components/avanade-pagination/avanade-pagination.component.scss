@@ -1,0 +1,18 @@
+@import '../../../assets/scss/variables';
+
+.avanade-pagination {
+    height: $pagination-height;
+    text-align: center;
+    margin: 50px 0;
+}
+
+.pagination-item {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin: 0 3px;
+    
+    &.input {
+        width: 40px;
+    }
+}
